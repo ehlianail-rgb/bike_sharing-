@@ -5,13 +5,13 @@ This project analyzes the behavioral discrepancies between **subscribed members*
 
 ## Background & Pricing Structure
 The system offers flexible mobility options with three pricing tiers: single-ride passes, full-day passes, and annual memberships. 
-* **Casual Riders:** Users who purchase single-ride or full-day passes.
-* **Annual Members:** Users with annual subscriptions. This segment represents the company's most profitable revenue stream.
+- **Casual Riders:** Users who purchase single-ride or full-day passes.
+- **Annual Members:** Users with annual subscriptions. This segment represents the company's most profitable revenue stream.
 
 ## Data Infrastructure 
-* **Data Scale:** Historical trip data from Jan. 2026 to Jun. 2026 (Google Coursera Data Analysis Capstone).
-* **Data Infrastructure:** Google BigQuery (SQL)for data cleaning, table joins, and feature extraction.
-* **Analysis & Visualization:** Python (Pandas, Seaborn, Matplotlib) for generating data graphs. 
+- **Data Scale:** Historical trip data from Jan. 2026 to Jun. 2026 (Google Coursera Data Analysis Capstone).
+- **Data Infrastructure:** Google BigQuery (SQL)for data cleaning, table joins, and feature extraction.
+- **Analysis & Visualization:** Python (Pandas, Seaborn, Matplotlib) for generating data graphs. 
 
 ## Data Cleaning 
 Anomalies were detected in the riding duration metrics, where the 75th percentile (`Q3`) was merely **18.7 minutes**, yet the maximum value reached an unrealistic **1,499 minutes**. 
