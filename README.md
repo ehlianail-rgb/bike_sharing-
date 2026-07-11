@@ -50,7 +50,7 @@ From the 1. trip duration chart, it is noticeable that casual users tend to rent
 The 3. hourly trend chart clearly demonstrates that daily rental peaks occur at 7 AM and 5 PM. These periods directly correspond to corporate clock-in and clock-out hours, proving that bikes serve as a primary mode of transit during weekdays.
 ### Hypothesis
 - **Not a habit**:
-The inherent reason why casual users do not opt for subscription could due to little frequency on using bikes; in other words, casual users do not cultivate a habit on using bikes as a way of commute in daily lives. It could be that traveling on bikes for their commute distance is just not cost-effective. Instead, **it is only a good deal when bikes can be used  during leisure activities on weekends.**
+The inherent reason why casual users do not opt for subscription suggests that little frequency on using bikes; in other words, casual users do not cultivate a habit on using bikes as a way of commute in daily lives. It could be that traveling on bikes for their commute distance is just not cost-effective. Instead, **it is only a good deal when bikes can be used  during leisure activities on weekends.**
 ## Strategies
 Based on the behavioral insights extracted above, the marketing strategy should focus on two aspects: **In-App Conversion** and **Location Targeting**.
 
@@ -62,4 +62,5 @@ As observed, casual riders dominate weekend usage, implying that users open the 
 ### 2. Targeting Location 
 <img width="988" height="484" alt="image" src="https://github.com/user-attachments/assets/a15c40c6-291f-4f15-a894-8c1eadab0410" />
 
-- **Action**: Launch weekday discount coupons at the top 5 weekend biking hotspots to provide a strong incentive for casual riders to rent during the week. This strategy encourages casual users to experience the convenience of weekday biking, fostering a new daily routine and ultimately retaining them as permanent annual subscribers.
+- **Action**: Launch weekday discount coupons at the top 5 weekend biking hotspots to provide a strong incentive for casual riders to rent during the week.
+- **Incentive**: This strategy encourages casual users to experience the convenience of weekday biking, fostering a new daily routine and ultimately retaining them as permanent annual subscribers.
