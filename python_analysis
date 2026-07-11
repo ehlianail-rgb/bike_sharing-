@@ -1,8 +1,13 @@
-# grpah of 1. Contrast in Riding Time
+import pandas as pd
+
+df_clean = pd.read_csv('/Users/ehlianail/Downloads/bquxjob_44ec7067_19f4e97efde.csv')
+
+
+# graph of 1. Contrast in Riding Time
 plt.figure(figsize=(10, 6))
 sns.barplot(data=df_clean, x="day", y="avg_duration_minutes", hue="usertype", order=['Mon', 'Tue', 'Wed','Thu', 'Fri', 'Sat', 'Sun'], errorbar=None) 
 
-  plt.title("Contrast in Riding Time between Weekdays and Weekends", fontsize=16, fontweight='bold')
+plt.title("Contrast in Riding Time between Weekdays and Weekends", fontsize=16, fontweight='bold')
 plt.xlabel("Day ", fontsize=12)
 plt.ylabel("average riding time (minutes)", fontsize=12)
 plt.show()
