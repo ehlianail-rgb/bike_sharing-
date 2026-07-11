@@ -1,0 +1,60 @@
+# merge 6 files to one 
+WITH merged_raw_data AS (
+    SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202601` UNION ALL
+    SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202602` UNION ALL
+    SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202603` UNION ALL
+    SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202604` UNION ALL
+     SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202605` UNION ALL
+    SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202606` 
+),
+
+# select features
+extracted_features AS (
+    SELECT 
+        ride_id,
+        member_casual,
+        start_station_name,
+        started_at,
+        ended_at,
+        
+      
+        EXTRACT(MONTH FROM TIMESTAMP(started_at)) AS month,
+        EXTRACT(HOUR FROM TIMESTAMP(started_at)) AS hour_of_day,
+        
+        
+        FORMAT_TIMESTAMP('%a', TIMESTAMP(started_at)) AS day,
+        
+        
+        TIMESTAMP_DIFF(TIMESTAMP(ended_at), TIMESTAMP(started_at), SECOND) / 60.0 AS duration_minutes
+    FROM 
+        merged_raw_data
+),
+
+# data cleaning 
+df_clean AS (
+    SELECT *
+    FROM extracted_features
+    WHERE 
+        duration_minutes > 1 
+        AND duration_minutes < 60
+        AND start_station_name IS NOT NULL 
+        AND start_station_name != ''
+)
+
+# data organization
+SELECT 
+    member_casual AS usertype,           
+    month,
+    day,
+    hour_of_day,
+    COUNT(ride_id) AS trip_count,        
+    ROUND(AVG(duration_minutes), 2) AS avg_duration_minutes 
+FROM 
+    df_clean
+GROUP BY 
+    member_casual, 
+    month, 
+    day, 
+    hour_of_day
+ORDER BY 
+    usertype, month, day, hour_of_day;
