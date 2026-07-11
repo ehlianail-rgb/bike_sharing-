@@ -4,7 +4,7 @@ WITH merged_raw_data AS (
     SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202602` UNION ALL
     SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202603` UNION ALL
     SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202604` UNION ALL
-     SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202605` UNION ALL
+    SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202605` UNION ALL
     SELECT * FROM `sinuous-vortex-499912-d2.bike_project.202606` 
 ),
 
