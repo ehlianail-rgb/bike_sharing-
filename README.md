@@ -17,13 +17,9 @@ The system offers flexible mobility options with three pricing tiers: single-rid
 Anomalies were detected in the riding duration metrics, where the 75th percentile (`Q3`) was merely **18.7 minutes**, yet the maximum value reached an unrealistic **1,499 minutes**. 
 This phenomenon is likely due to users failing to lock or return bikes properly. To enhance data efficiency, I controlled valid trips to **1 to 60 minutes**. 
 ## Behavioral Analysis
-<table border="0" width="100%">
-  <tr>
+<p align="center">
   <img src="<img width="978" height="796" alt="image" src="https://github.com/user-attachments/assets/c5b2b002-3306-4518-956f-0b60a35f25d6" />
-" width="100%" />
-</td>
-  </tr>
-</table>
+</p>
 
 ### Key Observations
 - **Contrast between frequency and duration**:
