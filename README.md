@@ -19,26 +19,8 @@ This phenomenon is likely due to users failing to lock or return bikes properly.
 ## Behavioral Analysis
 <table border="0" width="100%">
   <tr>
-    <td width="50%" align="center" valign="top">
-      <p><b>1. Contrast in Riding Time</b></p>
-      <img src="https://github.com/user-attachments/assets/a675ef9f-c041-4a17-896a-37cac7bbe30e" width="100%" /> 
-    </td>
-    <td width="50%" align="center" valign="top">
-      <p><b>2. Daily Average Riding Volume</b></p>
-      <img src="https://github.com/user-attachments/assets/8ea8b4d7-630e-4d35-816b-9f302a68115c" width="100%" />
-    </td>
-  </tr>
-</table>
-
-<table border="0" width="100%">
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <p><b>3. Daily Renting Peak</b></p>
-   <img width="862" height="554" alt="image" src="https://github.com/user-attachments/assets/306eb34b-012a-4bc3-8be9-e3c4bcfd37d0" width="100%"/>
-  </td>
-  <td>
-       <p><b>4. Weekend Hourly Trend</b></p>
-  <img src="https://github.com/user-attachments/assets/de8f794b-9245-4ec7-b75c-22d94df2d84e" width="100%" />
+  <img src="<img width="978" height="796" alt="image" src="https://github.com/user-attachments/assets/c5b2b002-3306-4518-956f-0b60a35f25d6" />
+" width="100%" />
 </td>
   </tr>
 </table>
